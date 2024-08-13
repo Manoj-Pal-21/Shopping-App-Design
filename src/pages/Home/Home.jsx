@@ -1,6 +1,7 @@
 import React from 'react';
 import './Home.css';
-import Actions from '../../component/Actions';
+import Actions from '../../component/Action/Actions';
+import Details from '../../component/Detail/Details';
 
 const Home = () => {
 
@@ -12,6 +13,7 @@ const Home = () => {
         <p className="title">THE 10 BEST Phuket Tours & Excursions</p>
       </div>
       <Actions />
+      <Details />
     </div>
   );
 };

@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import "../../styles/Actions.css"
 
 export const Actions = () => {
     const [selectedButton, setSelectedButton] = useState('bestseller');
@@ -32,6 +33,17 @@ export const Actions = () => {
                 <div className="button-container">
                     <button className="share-button">Share</button>
                     <button className="wishlist-button">Wishlist</button>
+                </div>
+            </div>
+
+            <div className="left-img-container">
+                <img src="images/bort.png" alt="Left side" className="left-img" />
+                <div className="right-img-container">
+                    <img src="images/beach.png" alt="Top right" className="right-img top" />
+                    <div className="bottom-images">
+                        <img src="images/nature.png" alt="Bottom left" className="right-img bottom" />
+                        <img src="images/fan.png" alt="Bottom right" className="right-img bottom" />
+                    </div>
                 </div>
             </div>
         </>
