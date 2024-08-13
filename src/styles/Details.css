@@ -11,7 +11,7 @@
     align-items: flex-start;
     min-width: 150px;
     position: relative;
-    padding-left: 40px;
+    padding-left: 50px;
 }
 
 .detail-item::before {
@@ -20,11 +20,11 @@
     left: 0;
     top: 50%;
     transform: translateY(-50%);
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     background-color: transparent;
     border: 1px solid #e9e7e7;
-    border-radius: 5px;
+    border-radius: 12px;
     box-sizing: border-box;
 }
 
