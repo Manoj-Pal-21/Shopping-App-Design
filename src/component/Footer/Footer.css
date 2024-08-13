@@ -83,13 +83,6 @@
     color: #fff; 
 }
 
-.footer-bottom {
-    text-align: center;
-    margin-top: 20px;
-    font-size: 0.9em; 
-    border-top: 1px solid #ccc; 
-    padding-top: 10px; 
-}
 
 @media (max-width: 768px) {
     .footer-content {
