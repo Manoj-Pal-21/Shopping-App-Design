@@ -17,12 +17,12 @@ const Navbar = () => {
             </div>
             <ul className={`nav-links ${isOpen ? 'active' : ''}`}>
                 <li><Link to="/">Home</Link></li>
-                <li><Link to="/about">About Us</Link></li>
-                <li><Link to="/services">Airport Transfers</Link></li>
-                <li><Link to="/destinations">Deals</Link></li>
-                <li><Link to="/partner">Activities</Link></li>
-                <li><Link to="/community">Agent Login</Link></li>
-                <li><Link to="/faq">USD</Link></li>
+                <li><Link to="/">About Us</Link></li>
+                <li><Link to="/">Airport Transfers</Link></li>
+                <li><Link to="/">Deals</Link></li>
+                <li><Link to="/activities">Activities</Link></li>
+                <li><Link to="/">Agent Login</Link></li>
+                <li><Link to="/">USD</Link></li>
             </ul>
             <div className="menu-toggle" onClick={toggleMenu}>
                 <div className="bar"></div>

@@ -16,20 +16,20 @@ const Footer = () => {
                     <h4>About Us</h4>
                     <ul>
                         <li><Link to="/home">Home</Link></li>
-                        <li><Link to="/special-deals">Special Deals</Link></li>
-                        <li><Link to="/destinations">Destinations</Link></li>
-                        <li><Link to="/services">Services</Link></li>
-                        <li><Link to="/community">Community</Link></li>
-                        <li><Link to="/blogs">Blogs</Link></li>
+                        <li><Link to="/">Special Deals</Link></li>
+                        <li><Link to="/">Destinations</Link></li>
+                        <li><Link to="/">Services</Link></li>
+                        <li><Link to="/">Community</Link></li>
+                        <li><Link to="/">Blogs</Link></li>
                     </ul>
                 </div>
                 <div className="footer-section">
                     <h4>Work with Us</h4>
                     <ul>
-                        <li><Link to="/partner">Partner With Us</Link></li>
-                        <li><Link to="/agent-login">Agent Login</Link></li>
-                        <li><Link to="/join-local-amigo">Join Us as Local Amigo</Link></li>
-                        <li><Link to="/faq">FAQ</Link></li>
+                        <li><Link to="/">Partner With Us</Link></li>
+                        <li><Link to="/">Agent Login</Link></li>
+                        <li><Link to="/">Join Us as Local Amigo</Link></li>
+                        <li><Link to="/">FAQ</Link></li>
                     </ul>
                 </div>
                 <div className="footer-section">
