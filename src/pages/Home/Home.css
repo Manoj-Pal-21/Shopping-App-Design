@@ -1,0 +1,126 @@
+/* Base styles for container and layout */
+.home-container {
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+}
+
+.island-container {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+button {
+    border: none;
+    border-radius: 12px;
+    padding: 5px 10px;
+    font-weight: bold;
+    color: black;
+    margin: 5px;
+    background: #F5F5F5;
+    cursor: pointer;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+button.selected {
+    color: #EB662B;
+    background-color: #EFEFEF;
+}
+
+.tour-info {
+    margin-top: 20px;
+}
+
+.tour-title {
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+}
+
+.tour-details {
+    font-size: 12px;
+    color: #666;
+    margin-left: 20px;
+}
+
+.tour-details-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.button-container {
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.share-button,
+.wishlist-button {
+    border-radius: 8px;
+    font-size: 12px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .home {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .breadcrumb {
+        margin-bottom: 10px;
+    }
+
+    .title {
+        font-size: 16px;
+    }
+
+    .island-container {
+        flex-direction: column;
+    }
+
+    button {
+        width: 100%;
+        margin: 5px 0;
+        padding: 15px;
+    }
+
+    .tour-title {
+        font-size: 16px;
+    }
+
+    .button-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 480px) {
+    .home {
+        font-size: 12px;
+    }
+
+    .title {
+        font-size: 14px;
+    }
+
+    .tour-title {
+        font-size: 14px;
+    }
+
+    .tour-details {
+        font-size: 12px;
+    }
+}
