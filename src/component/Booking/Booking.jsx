@@ -3,6 +3,38 @@ import Details from '../Detail/Details'
 import { Title } from '../Title/Title'
 import { Typography } from '../Typography/Typography'
 
+const PriceDetail = ({ ageGroup, price, quantity, selectedQuantity }) => {
+    return (
+        <div className="mb-2">
+            <div className="flex items-center mb-2">
+                <Typography variant="text">
+                    {ageGroup}
+                    <span className="ml-2 font-bold">{price} x {quantity}</span>
+                    <div className="inline-flex items-center ml-4 space-x-4">
+                        <div className="flex items-center">
+                            <div className="h-4 w-4 border-2 rounded-full"></div>
+                            <span className="ml-2">{selectedQuantity}</span>
+                        </div>
+                        <div className="flex items-center">
+                            <div className="h-4 w-4 border-2 rounded-full"></div>
+                        </div>
+                    </div>
+                </Typography>
+            </div>
+        </div>
+    );
+};
+
+const ServiceOption = ({ label, price }) => {
+    return (
+        <div className="flex items-center mb-2">
+            <input type="checkbox" className="mr-2" />
+            <span>{label}</span>
+            <span className="ml-auto font-bold">{price}</span>
+        </div>
+    );
+};
+
 const Booking = () => {
 
     const DetailItem = ({ title, content }) => (
@@ -59,75 +91,39 @@ const Booking = () => {
                 </div>
 
                 <h3 className="text-[18px] font-semibold mb-6 mt-5">Tickets</h3>
-                <div className="mb-2">
-                    <div className="flex items-center mb-2">
-                        <Typography variant="text">
-                            Adult (18+ years)
-                            <span className="ml-2 font-bold">$282.00 x 3</span>
-                            <div className="inline-flex items-center ml-4 space-x-4">
-                                <div className="flex items-center">
-                                    <div className="h-4 w-4 border-2 rounded-full"></div>
-                                    <span className="ml-2">3</span>
-                                </div>
-                                <div className="flex items-center">
-                                    <div className="h-4 w-4 border-2 rounded-full"></div>
-                                </div>
-                            </div>
-                        </Typography>
-                    </div>
-                </div>
 
-                <div className="mb-2">
-                    <div className="flex items-center mb-2">
-                        <Typography variant="text">
-                            Adult (18+ years)
-                            <span className="ml-2 font-bold">$282.00 x 3</span>
-                            <div className="inline-flex items-center ml-4 space-x-4">
-                                <div className="flex items-center">
-                                    <div className="h-4 w-4 border-2 rounded-full"></div>
-                                    <span className="ml-2">3</span>
-                                </div>
-                                <div className="flex items-center">
-                                    <div className="h-4 w-4 border-2 rounded-full"></div>
-                                </div>
-                            </div>
-                        </Typography>
-                    </div>
-                </div>
-
-                <div className="mb-2">
-                    <div className="flex items-center mb-2">
-                        <Typography variant="text">
-                            Adult (18+ years)
-                            <span className="ml-2 font-bold">$282.00 x 3</span>
-                            <div className="inline-flex items-center ml-4 space-x-4">
-                                <div className="flex items-center">
-                                    <div className="h-4 w-4 border-2 rounded-full"></div>
-                                    <span className="ml-2">3</span>
-                                </div>
-                                <div className="flex items-center">
-                                    <div className="h-4 w-4 border-2 rounded-full"></div>
-                                </div>
-                            </div>
-                        </Typography>
-                    </div>
-                </div>
+                <PriceDetail
+                    ageGroup="Adult (18+ years)"
+                    price="$282.00"
+                    quantity="3"
+                    selectedQuantity="3"
+                />
+                <PriceDetail
+                    ageGroup="Adult (18+ years)"
+                    price="$282.00"
+                    quantity="3"
+                    selectedQuantity="3"
+                />
+                <PriceDetail
+                    ageGroup="Adult (18+ years)"
+                    price="$282.00"
+                    quantity="3"
+                    selectedQuantity="3"
+                />
 
 
                 <h3 className="text-[18px] font-semibold mb-6 mt-5">Add Extra</h3>
-                <div className="mb-4">
-                    <div className="flex items-center mb-2">
-                        <input type="checkbox" className="mr-2" />
-                        <span>Add Service per booking</span>
-                        <span className="ml-auto font-bold">$40</span>
-                    </div>
-                    <div className="flex items-center mb-2">
-                        <input type="checkbox" className="mr-2" />
-                        <span>Add Service per booking</span>
-                        <span className="ml-auto font-bold">$40</span>
-                    </div>
-                </div>
 
+                <div className="mb-4">
+                    <ServiceOption
+                        label="Add Service per booking"
+                        price="$40"
+                    />
+                    <ServiceOption
+                        label="Add Service per booking"
+                        price="$40"
+                    />
+                </div>
 
                 <div className="flex justify-between font-bold mb-4">
                     <span>Total:</span>
