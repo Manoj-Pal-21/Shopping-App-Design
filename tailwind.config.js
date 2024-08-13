@@ -6,8 +6,18 @@ export default {
   ],
   theme: {
     extend: {
+      fontSize: {
+        'custom': '14.41px', 
+      },
+      lineHeight: {
+        'custom': '28.13px', 
+      },
+      fontWeight: {
+        'custom': 400, 
+      },
       colors: {
         'custom-orange': '#EB662B',
+        'text-dark': '#05073C'
       },
     },
   },
