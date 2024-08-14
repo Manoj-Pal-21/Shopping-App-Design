@@ -42,13 +42,14 @@ export const Actions = () => {
 
 
 
-            <div className="flex flex-row">
-                <img src="images/bort.png" alt="Left side" className="w-1/2 p-2 box-border" />
-                <div className="flex flex-col justify-between w-1/2 p-2 box-border">
+            <div className="flex flex-col md:flex-row">
+                <img src="images/bort.png" alt="Left side" className="w-full md:w-1/2 p-2 box-border" />
+                <div className="flex flex-col justify-between w-full md:w-1/2 p-2 box-border">
                     <img src="images/beach.png" alt="Top right" className="w-full mb-2 box-border" />
-                    <div className="flex gap-2">
-                        <img src="images/nature.png" alt="Bottom left" className="w-[calc(50%-4px)] box-border" />
-                        <img src="images/fan.png" alt="Bottom right" className="w-[calc(50%-4px)] box-border" />
+
+                    <div className="flex flex-col md:flex-row gap-2">
+                        <img src="images/nature.png" alt="Bottom left" className="w-full md:w-[calc(50%-4px)] box-border" />
+                        <img src="images/fan.png" alt="Bottom right" className="w-full md:w-[calc(50%-4px)] box-border" />
                     </div>
                 </div>
             </div>

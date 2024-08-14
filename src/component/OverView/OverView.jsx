@@ -1,8 +1,8 @@
-import React from 'react'
-import Details from '../Detail/Details'
-import { Title } from '../Title/Title'
-import { Typography } from '../Typography/Typography'
-import Package from '../Package/Package'
+import React from 'react';
+import Details from '../Detail/Details';
+import { Title } from '../Title/Title';
+import { Typography } from '../Typography/Typography';
+import Package from '../Package/Package';
 
 const OverView = () => {
     return (
@@ -31,9 +31,10 @@ const OverView = () => {
                 <li>Feel the comfort of a tour limited to 35 passengers</li>
                 <li>Catch a glimpse of the wild monkeys around Monkey Beach</li>
             </Typography>
+
             <div className="border-t border-gray-300 mt-[100px]"></div>
         </div>
-    )
+    );
 }
 
-export default OverView
+export default OverView;
