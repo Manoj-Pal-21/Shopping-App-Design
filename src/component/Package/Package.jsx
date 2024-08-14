@@ -30,7 +30,7 @@ const Package = () => {
                     </ul>
                 ))}
             </div>
-            <div className="border-t border-gray-300 mt-12 mb-12"></div>
+            <div className="border-t border-gray-300 mt-[50px]"></div>
         </div>
     );
 }

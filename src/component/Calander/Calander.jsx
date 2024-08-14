@@ -10,7 +10,7 @@ const Calendar = () => {
   const endDate = 20;  // Example end date
 
   const renderCalendar = (title, selectedDate) => (
-    <div className="bg-white shadow-md rounded-lg p-2 w-64">
+    <div className="bg-white shadow-md rounded-lg p-2 w-full sm:w-64">
       <h2 className="text-xl font-semibold mb-2">{title}</h2>
       
       {/* Header with Days of the Week */}
@@ -37,20 +37,20 @@ const Calendar = () => {
   );
 
   return (
-    <div className="p-6 max-w-[40rem]">
+    <div className="p-4 sm:p-6 max-w-full sm:max-w-[40rem]">
       {/* Title */}
-      <h1 className="text-3xl leading-[40px] font-bold mb-4">Availability Calendar</h1>
+      <h1 className="text-3xl leading-[40px] font-bold mb-4 text-left">Availability Calendar</h1>
       
       {/* Double Calendar Container */}
-      <div className="flex space-x-2">
-        <div className="flex-none">
+      <div className="flex flex-col sm:flex-row sm:space-x-2">
+        <div className="flex-none mb-4 sm:mb-0">
           {renderCalendar('Start Date', startDate)}
         </div>
         <div className="flex-none">
           {renderCalendar('End Date', endDate)}
         </div>
       </div>
-      <div className="border-t border-gray-300 mt-6"></div>
+      <div className="border-t border-gray-300 mt-[50px]"></div>
     </div>
   );
 }

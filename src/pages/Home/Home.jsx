@@ -9,6 +9,7 @@ import Faq from '../../component/Faq/Faq';
 import Reviews from '../../component/Reviews/Reviews';
 import Contact from '../../component/Contact/Contact';
 import CardCarousel from '../../component/CardCarousel/CardCarousel';
+import Profile from '../../component/Profile/Profile';
 
 
 const Home = () => {
@@ -27,6 +28,7 @@ const Home = () => {
       <Calander />
       <Faq />
       <Reviews />
+      <Profile />
       <Contact />
       <CardCarousel />
     </div>

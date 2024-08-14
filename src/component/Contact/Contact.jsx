@@ -8,29 +8,33 @@ const Contact = () => {
 
       {/* Labels in two rows */}
       <div className="flex flex-col gap-6 mb-6">
+        <p className="text-[14.53px] leading-[28.13px]">
+          Your email address will not be published. Required fields are marked *
+        </p>
+
         {/* First Row */}
         <div className="flex gap-6">
           <div className="flex-1">
-            <span className="block text-lg font-medium">Location</span>
+            <span className="block text-[14.77px] leading-[28.13px] font-medium">Location</span>
           </div>
           <div className="flex-1">
-            <span className="block text-lg font-medium">Amenities</span>
+            <span className="block text-[14.77px] leading-[28.13px] font-medium">Amenities</span>
           </div>
           <div className="flex-1">
-            <span className="block text-lg font-medium">Food</span>
+            <span className="block text-[14.77px] leading-[28.13px] font-medium">Food</span>
           </div>
         </div>
 
         {/* Second Row */}
         <div className="flex gap-6">
           <div className="flex-1">
-            <span className="block text-lg font-medium">Room</span>
+            <span className="block text-[14.77px] leading-[28.13px] font-medium">Room</span>
           </div>
           <div className="flex-1">
-            <span className="block text-lg font-medium">Price</span>
+            <span className="block text-[14.77px] leading-[28.13px] font-medium">Price</span>
           </div>
           <div className="flex-1">
-            <span className="block text-lg font-medium">Tour Operator</span>
+            <span className="block text-[14.77px] leading-[28.13px] font-medium">Tour Operator</span>
           </div>
         </div>
       </div>
@@ -40,7 +44,6 @@ const Contact = () => {
         <div className="flex gap-6">
           {/* Name */}
           <div className="flex-1">
-            <label htmlFor="name" className="text-lg font-medium mb-2 block">Your Name</label>
             <input
               type="text"
               id="name"
@@ -50,10 +53,9 @@ const Contact = () => {
               required
             />
           </div>
-          
+
           {/* Email */}
           <div className="flex-1">
-            <label htmlFor="email" className="text-lg font-medium mb-2 block">Your Email</label>
             <input
               type="email"
               id="email"

@@ -2,9 +2,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const RoadMapItem = ({ day, title, description }) => (
-  <div>
-    <h2 className="text-lg leading-[30px] font-medium mb-2">{day}: {title}</h2>
-    {description && <p className="text-sm leading-[28.13px]">{description}</p>}
+  <div className="relative pl-8 mb-8 border-l-2 border-orange-300">
+    <div className="absolute -left-2.5 w-5 h-5 bg-orange-500 rounded-full"></div>
+    <div className="ml-4">
+      <h2 className="text-lg font-medium mb-1">{day}: {title}</h2>
+      {description && <p className="text-sm text-gray-700">{description}</p>}
+    </div>
   </div>
 );
 
@@ -30,12 +33,12 @@ const RoadMap = () => {
   ];
 
   return (
-    <div className="p-8 max-w-[42rem]">
+    <div className="p-8 max-w-[42rem] ml-0"> {/* Changed mx-auto to ml-0 */}
       {/* Title */}
-      <h1 className="text-4xl leading-[45px] font-bold mb-6">Itinerary</h1>
+      <h1 className="text-4xl font-bold mb-6">Itinerary</h1>
 
-      {/* Roadmap items */}
-      <div className="space-y-6">
+      {/* Timeline */}
+      <div>
         {itinerary.map((item, index) => (
           <RoadMapItem
             key={index}
@@ -45,7 +48,6 @@ const RoadMap = () => {
           />
         ))}
       </div>
-      <div className="border-t border-gray-300 mt-[50px]"></div>
     </div>
   );
 };
