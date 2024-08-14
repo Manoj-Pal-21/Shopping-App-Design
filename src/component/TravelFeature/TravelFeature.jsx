@@ -15,16 +15,26 @@ const TravelFeature = () => {
                 </div>
             </div>
 
-            {/* Tour Types */}
-            <div className="space-y-2">
-                <div className="font-semibold text-sm md:text-base lg:text-lg">
+            <div className="space-y-4 md:space-y-6 lg:space-y-8">
+                <div
+                    className="font-semibold"
+                    style={{ fontSize: '17.3px', lineHeight: '10px' }}
+                >
                     Tour Type
                 </div>
-                <div className="flex flex-col space-y-2">
+                <div className="flex flex-col space-y-2 md:space-y-3 lg:space-y-4">
                     {['Nature Tours', 'Adventure Tours', 'Cultural Tours', 'Food Tours', 'City Tours', 'Cruises Tours'].map((type) => (
                         <div key={type} className="flex items-center">
-                            <input type="checkbox" id={type.replace(/\s+/g, '-').toLowerCase()} className="mr-2" />
-                            <label htmlFor={type.replace(/\s+/g, '-').toLowerCase()} className="text-xs md:text-sm lg:text-base">
+                            <input
+                                type="checkbox"
+                                id={type.replace(/\s+/g, '-').toLowerCase()}
+                                className="mr-2 h-4 w-4"
+                            />
+                            <label
+                                htmlFor={type.replace(/\s+/g, '-').toLowerCase()}
+                                className="text-sm"
+                                style={{ lineHeight: '1.5' }}
+                            >
                                 {type}
                             </label>
                         </div>
@@ -32,21 +42,24 @@ const TravelFeature = () => {
                 </div>
             </div>
 
+
             {/* See More Button */}
-            <button className="mt-4 text-blue-500 underline text-xs md:text-sm lg:text-base p-4">
+            <button button className="mt-2 text-blue-500 underline text-xs md:text-sm lg:text-base p-2" >
                 See More
             </button>
 
             {/* Filters */}
-            <div className="space-y-4">
-                {['Filter Price', 'Duration', 'Rating', 'Specials'].map((filter) => (
-                    <div key={filter} className="space-y-2">
-                        <div className="font-semibold text-sm md:text-base lg:text-lg">{filter}</div>
-                        <div className="border-t border-gray-300"></div>
-                    </div>
-                ))}
+            <div div className="space-y-2" >
+                {
+                    ['Filter Price', 'Duration', 'Rating', 'Specials'].map((filter) => (
+                        <div key={filter}>
+                            <div className="border-t border-gray-300"></div>
+                            <div className="font-semibold text-sm md:text-base lg:text-lg">{filter}</div>
+                        </div>
+                    ))
+                }
             </div>
-        </div>
+        </div >
     );
 };
 
