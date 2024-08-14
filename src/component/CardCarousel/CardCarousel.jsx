@@ -17,9 +17,9 @@ const CardCarousel = () => {
                         {/* Card Content */}
                         <div className="p-4">
                             {/* Location */}
-                            <div className="text-[12.29px] leading-[24.38px] font-semibold text-gray-800">{item.location}</div>
+                            <div className="text-[12.29px] leading-[24.38px]  text-gray-600 mt-1 ">{item.location}</div>
                             {/* Tour Info */}
-                            <div className="text-[15.88px] leading-[24px] text-gray-600 mt-1">{item.tourTitle}</div>
+                            <div className="text-[15.88px] leading-[24px]  text-gray-800">{item.tourTitle}</div>
                             {/* Rating */}
                             <div className="text-center mt-2 text-[12.49px] leading-[24.38px] text-yellow-500">
                                 {item.rating}
