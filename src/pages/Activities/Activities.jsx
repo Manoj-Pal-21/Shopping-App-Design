@@ -1,4 +1,5 @@
 import React from 'react'
+import FeaturesAndTravel from '../../component/FeaturesAndTravel/FeaturesAndTravel'
 
 const Activities = () => {
   return (
@@ -12,6 +13,7 @@ const Activities = () => {
           Explore all things to do in Phuket
         </h2>
       </div>
+      <FeaturesAndTravel />
     </div>
   )
 }
