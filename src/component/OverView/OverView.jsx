@@ -2,6 +2,7 @@ import React from 'react'
 import Details from '../Detail/Details'
 import { Title } from '../Title/Title'
 import { Typography } from '../Typography/Typography'
+import Package from '../Package/Package'
 
 const OverView = () => {
     return (

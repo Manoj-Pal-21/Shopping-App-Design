@@ -1,52 +1,36 @@
 import React from 'react';
 
+const items = [
+    { text: 'Beverages, drinking water, morning tea and buffet lunch', color: '#EFF7F1' },
+    { text: 'Local taxes', color: '#EFF7F1' },
+    { text: 'Hotel pickup and drop-off by air-conditioned minivan', color: '#EFF7F1' },
+    { text: 'InsuranceTransfer to a private pier', color: '#EFF7F1' },
+    { text: 'Soft drinks', color: '#EFF7F1' },
+    { text: 'Tour Guide', color: '#EFF7F1' },
+    { text: 'Towel', color: '#FFE5E5' },
+    { text: 'Tips', color: '#FFE5E5' },
+    { text: 'Alcoholic Beverages', color: '#FFE5E5' },
+];
+
 const Package = () => {
     return (
         <div className="p-4 max-w-2xl bg-white rounded-lg">
-            <h2 className="text-2xl font-semibold mb-4">Package Includes</h2>
-            <div className="grid grid-cols-2 gap-x-4">
-                <ul className="list-disc list-inside space-y-2">
-                    <li className="flex items-start" style={{ fontSize: '14.53px', fontWeight: 400, lineHeight: '28.13px' }}>
-                        <span className="w-5 h-4 border-2 border-gray-400 rounded-full mr-2"></span>
-                        Beverages, drinking water, morning tea and buffet lunch
-                    </li>
-                    <li className="flex items-start" style={{ fontSize: '14.53px', fontWeight: 400, lineHeight: '28.13px' }}>
-                        <span className="w-4 h-4 border-2 border-gray-400 rounded-full mr-2"></span>
-                        Local taxes
-                    </li>
-                    <li className="flex items-start" style={{ fontSize: '14.53px', fontWeight: 400, lineHeight: '28.13px' }}>
-                        <span className="w-5 h-4 border-2 border-gray-400 rounded-full mr-2"></span>
-                        Hotel pickup and drop-off by air-conditioned minivan
-                    </li>
-                    <li className="flex items-start" style={{ fontSize: '14.53px', fontWeight: 400, lineHeight: '28.13px' }}>
-                        <span className="w-4 h-4 border-2 border-gray-400 rounded-full mr-2"></span>
-                        InsuranceTransfer to a private pier
-                    </li>
-                    <li className="flex items-start" style={{ fontSize: '14.53px', fontWeight: 400, lineHeight: '28.13px' }}>
-                        <span className="w-4 h-4 border-2 border-gray-400 rounded-full mr-2"></span>
-                        Soft drinks
-                    </li>
-                    <li className="flex items-start" style={{ fontSize: '14.53px', fontWeight: 400, lineHeight: '28.13px' }}>
-                        <span className="w-4 h-4 border-2 border-gray-400 rounded-full mr-2"></span>
-                        Tour Guide
-                    </li>
-                </ul>
-                <ul className="list-disc list-inside space-y-2">
-                    <li className="flex items-start" style={{ fontSize: '14.53px', fontWeight: 400, lineHeight: '28.13px' }}>
-                        <span className="w-4 h-4 border-2 border-gray-400 rounded-full mr-2"></span>
-                        Towel
-                    </li>
-                    <li className="flex items-start" style={{ fontSize: '14.53px', fontWeight: 400, lineHeight: '28.13px' }}>
-                        <span className="w-4 h-4 border-2 border-gray-400 rounded-full mr-2"></span>
-                        Tips
-                    </li>
-                    <li className="flex items-start" style={{ fontSize: '14.53px', fontWeight: 400, lineHeight: '28.13px' }}>
-                        <span className="w-4 h-4 border-2 border-gray-400 rounded-full mr-2"></span>
-                        Alcoholic Beverages
-                    </li>
-                </ul>
+            <h2 className="text-2xl font-semibold mb-4">What's included</h2>
+            <div className="grid grid-cols-3 gap-x-6">
+                {['#EFF7F1', '#FFE5E5'].map((bgColor, index) => (
+                    <ul key={index} className={`list-disc list-inside space-y-2 ${index === 0 ? 'col-span-2' : 'col-span-1'}`}>
+                        {items
+                            .filter(item => (index === 0 ? item.color === '#EFF7F1' : item.color === '#FFE5E5'))
+                            .map((item, i) => (
+                                <li key={i} className="flex items-start text-sm font-normal leading-6">
+                                    <span className="w-4 h-4 rounded-full mr-2" style={{ backgroundColor: item.color }}></span>
+                                    {item.text}
+                                </li>
+                            ))}
+                    </ul>
+                ))}
             </div>
-            <div className="border-t border-gray-300 mt-[50px] mb-[50px]"></div>
+            <div className="border-t border-gray-300 mt-12 mb-12"></div>
         </div>
     );
 }

@@ -1,6 +1,7 @@
 import React from 'react'
 import OverView from '../OverView/OverView';
 import BookingSection from '../Section/BookingSection';
+import Package from '../Package/Package';
 
 
 const Booking = () => {
