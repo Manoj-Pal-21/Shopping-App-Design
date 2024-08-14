@@ -66,9 +66,9 @@
 }
 
 .bar {
-    width: 25px;
+    width: 30px;
     height: 3px;
-    margin: 3px 0;
+    margin: 1px 0;
     background-color: #333;
 }
 
@@ -82,7 +82,7 @@
         width: 100%;
         padding: 10px;
         background-color: #fff;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
     }
 
     .nav-links.active {
