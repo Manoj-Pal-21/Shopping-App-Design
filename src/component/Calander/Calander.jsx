@@ -3,11 +3,12 @@ import React, { useState } from 'react';
 const Calendar = () => {
   const daysOfWeek = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 
-  // State for selected start and end dates
-  const [selectedStartDate, setSelectedStartDate] = useState(null);
-  const [selectedEndDate, setSelectedEndDate] = useState(null);
-
-  // Calculate the number of days in the current month
+  const defaultStartDate = 5; 
+  const defaultEndDate = 15;  
+  
+  const [selectedStartDate, setSelectedStartDate] = useState(defaultStartDate);
+  const [selectedEndDate, setSelectedEndDate] = useState(defaultEndDate);
+ 
   const currentDate = new Date();
   const currentMonth = currentDate.getMonth();
   const currentYear = currentDate.getFullYear();
@@ -18,7 +19,7 @@ const Calendar = () => {
 
   const dates = Array.from({ length: totalDays }, (_, i) => i + 1);
 
-  // Event handler for start date selection
+  
   const handleStartDateClick = (date) => {
     if (selectedEndDate && date > selectedEndDate) {
       setSelectedStartDate(date);
@@ -28,7 +29,7 @@ const Calendar = () => {
     }
   };
 
-  // Event handler for end date selection
+  
   const handleEndDateClick = (date) => {
     if (selectedStartDate && date < selectedStartDate) {
       setSelectedEndDate(null);
