@@ -7,6 +7,8 @@ import EarthMap from '../../component/Maps/EarthMap';
 import Calander from '../../component/Calander/Calander';
 import Faq from '../../component/Faq/Faq';
 import Reviews from '../../component/Reviews/Reviews';
+import Contact from '../../component/Contact/Contact';
+import CardCarousel from '../../component/CardCarousel/CardCarousel';
 
 
 const Home = () => {
@@ -25,6 +27,8 @@ const Home = () => {
       <Calander />
       <Faq />
       <Reviews />
+      <Contact />
+      <CardCarousel />
     </div>
   );
 };

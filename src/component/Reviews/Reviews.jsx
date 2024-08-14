@@ -60,6 +60,7 @@ const Reviews = () => {
                     </tbody>
                 </table>
             </div>
+            <div className="border-t border-gray-300 mt-[50px]"></div>
         </div>
     );
 };
