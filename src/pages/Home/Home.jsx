@@ -4,6 +4,8 @@ import Booking from '../../component/Booking/Booking';
 import Package from '../../component/Package/Package';
 import RoadMap from '../../component/RoadMap/RoadMap';
 import EarthMap from '../../component/Maps/EarthMap';
+import Calander from '../../component/Calander/Calander';
+import Faq from '../../component/Faq/Faq';
 
 
 const Home = () => {
@@ -19,6 +21,8 @@ const Home = () => {
       <Package />
       <RoadMap />
       <EarthMap />
+      <Calander />
+      <Faq />
     </div>
   );
 };
