@@ -6,6 +6,7 @@ import RoadMap from '../../component/RoadMap/RoadMap';
 import EarthMap from '../../component/Maps/EarthMap';
 import Calander from '../../component/Calander/Calander';
 import Faq from '../../component/Faq/Faq';
+import Reviews from '../../component/Reviews/Reviews';
 
 
 const Home = () => {
@@ -23,6 +24,7 @@ const Home = () => {
       <EarthMap />
       <Calander />
       <Faq />
+      <Reviews />
     </div>
   );
 };
