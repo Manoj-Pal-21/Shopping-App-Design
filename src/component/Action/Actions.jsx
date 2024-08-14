@@ -27,7 +27,6 @@ export const Actions = () => {
             </div>
 
 
-
             <div className="mt-5">
                 <h2 className="font-bold text-gray-800 text-[40px]">
                     Phi Phi Islands Adventure Day Trip with<br />
@@ -39,7 +38,6 @@ export const Actions = () => {
                     <button className="text-black rounded-lg text-xs px-3 py-1">Wishlist</button>
                 </div>
             </div>
-
 
 
             <div className="flex flex-col md:flex-row">
