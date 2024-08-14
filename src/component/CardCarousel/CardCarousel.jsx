@@ -12,8 +12,8 @@ const CardCarousel = () => {
                     <div key={index} className="bg-white shadow-lg rounded-lg overflow-hidden w-48 sm:w-56 md:w-64 flex-shrink-0">
                         <img src={item.imageUrl} alt="Card image" className="w-full h-32 sm:h-36 md:h-48 object-cover" />
                         <div className="p-3 sm:p-4">
-                            <div className="text-xs sm:text-sm text-gray-600 mt-1">{item.location}</div>
-                            <div className="text-sm sm:text-base md:text-lg text-gray-800">{item.tourTitle}</div>
+                            <div className="text-xs leading-6 text-gray-600 mt-1">{item.location}</div>
+                            <div className="text-base leading-6 text-gray-800">{item.tourTitle}</div>
                             <div className="text-center mt-2 text-xs sm:text-sm text-gray-500">
                                 {item.rating}
                             </div>
