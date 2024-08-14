@@ -1,6 +1,7 @@
 import React from 'react';
 import Actions from '../../component/Action/Actions';
 import Booking from '../../component/Booking/Booking';
+import Package from '../../component/Package/Package';
 
 const Home = () => {
 
@@ -12,6 +13,7 @@ const Home = () => {
       </div>
       <Actions />
       <Booking />
+      <Package />
     </div>
   );
 };
