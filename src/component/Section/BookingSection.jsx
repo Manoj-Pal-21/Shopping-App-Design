@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import { Typography } from '../Typography/Typography';
 
 const PriceDetail = ({ ageGroup, price, quantity, selectedQuantity }) => {
@@ -8,11 +8,13 @@ const PriceDetail = ({ ageGroup, price, quantity, selectedQuantity }) => {
                 <Typography variant="text" className="flex-grow">
                     {ageGroup}
                 </Typography>
-                <span className="font-bold md:ml-2">{price} x {quantity}</span>
+                <span className="font-bold md:ml-2 text-sm md:text-base">
+                    {price} x {quantity}
+                </span>
                 <div className="inline-flex items-center ml-4 space-x-4 mt-2 md:mt-0">
                     <div className="flex items-center">
                         <div className="h-4 w-4 border-2 rounded-full"></div>
-                        <span className="ml-2">{selectedQuantity}</span>
+                        <span className="ml-2 text-sm md:text-base">{selectedQuantity}</span>
                     </div>
                     <div className="flex items-center">
                         <div className="h-4 w-4 border-2 rounded-full"></div>
@@ -25,7 +27,7 @@ const PriceDetail = ({ ageGroup, price, quantity, selectedQuantity }) => {
 
 const ServiceOption = ({ label, price }) => {
     return (
-        <div className="flex items-center mb-2">
+        <div className="flex items-center mb-2 text-sm md:text-base">
             <input type="checkbox" className="mr-2" />
             <span>{label}</span>
             <span className="ml-auto font-bold">{price}</span>
@@ -44,8 +46,8 @@ const DetailItem = ({ title, content }) => (
 const BookingSection = () => {
     return (
         <div className="col-span-12 md:col-span-4 bg-white shadow-md rounded-lg p-6 md:ml-4 w-full max-w-lg mx-auto">
-            <Typography variant='text' className="text-center md:text-left">
-                From<span className='ml-[10px] font-bold'>$1,200</span>
+            <Typography variant='text' className="text-center md:text-left text-sm md:text-base">
+                From<span className='ml-2 font-bold'>$1,200</span>
             </Typography>
 
             <div className="border border-[#E7E6E6] rounded-lg mt-4">
@@ -58,7 +60,7 @@ const BookingSection = () => {
                 </div>
             </div>
 
-            <h3 className="text-[18px] font-semibold mb-6 mt-5">Tickets</h3>
+            <h3 className="text-lg md:text-xl font-semibold mb-6 mt-5">Tickets</h3>
 
             <PriceDetail
                 ageGroup="Adult (18+ years)"
@@ -79,7 +81,7 @@ const BookingSection = () => {
                 selectedQuantity="3"
             />
 
-            <h3 className="text-[18px] font-semibold mb-6 mt-5">Add Extra</h3>
+            <h3 className="text-lg md:text-xl font-semibold mb-6 mt-5">Add Extra</h3>
 
             <div className="mb-4">
                 <ServiceOption
@@ -92,13 +94,13 @@ const BookingSection = () => {
                 />
             </div>
 
-            <div className="flex justify-between font-bold mb-4">
+            <div className="flex justify-between font-bold mb-4 text-sm md:text-base">
                 <span>Total:</span>
                 <span>$530.00</span>
             </div>
 
             <div className="flex justify-center mb-4">
-                <button className="bg-orange-500 text-white font-bold py-3 px-4 rounded-md transition duration-300 hover:bg-orange-600 w-full max-w-md">
+                <button className="bg-orange-500 text-white font-bold py-3 px-4 rounded-md transition duration-300 hover:bg-orange-600 w-full max-w-md text-sm md:text-base">
                     Book Now
                 </button>
             </div>
@@ -106,4 +108,4 @@ const BookingSection = () => {
     )
 }
 
-export default BookingSection
+export default BookingSection;
