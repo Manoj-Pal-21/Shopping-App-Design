@@ -45,15 +45,14 @@ const Profile = () => {
                 <TourReview key={index} {...review} />
             ))}
             <div className="mt-auto">
-    <button
-        type="submit"
-        className="bg-transparent border border-orange-500 text-orange-500 py-2 px-4 rounded-[12px] font-semibold hover:bg-orange-100 transition duration-300 m-4"
-        style={{ width: '222.14px', height: '62px' }}
-    >
-        See more reviews
-    </button>
-</div>
-
+                <button
+                    type="submit"
+                    className="bg-transparent border border-orange-500 text-orange-500 py-2 px-4 rounded-[12px] font-semibold hover:bg-orange-100 transition duration-300 m-4"
+                    style={{ width: '222.14px', height: '62px' }}
+                >
+                    See more reviews
+                </button>
+            </div>
         </div>
     );
 };

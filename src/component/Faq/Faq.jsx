@@ -37,7 +37,7 @@ const Faq = () => {
                     </div>
                 </div>
             </div>
-            <div className="border-t border-gray-300 mt-6 md:mt-8"></div>
+            <div className="border-t border-gray-300 mt-[50px]"></div>
         </div>
     );
 };
