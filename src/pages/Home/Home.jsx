@@ -2,6 +2,9 @@ import React from 'react';
 import Actions from '../../component/Action/Actions';
 import Booking from '../../component/Booking/Booking';
 import Package from '../../component/Package/Package';
+import RoadMap from '../../component/RoadMap/RoadMap';
+import EarthMap from '../../component/Maps/EarthMap';
+
 
 const Home = () => {
 
@@ -14,6 +17,8 @@ const Home = () => {
       <Actions />
       <Booking />
       <Package />
+      <RoadMap />
+      <EarthMap />
     </div>
   );
 };

@@ -6,9 +6,9 @@ export const Typography = ({ children, variant }) => {
             {
                 variant === "text"
                     ?
-                    <p className="font-custom text-custom leading-custom mb-4">
+                    <span className="font-custom text-custom leading-custom mb-4">
                         {children}
-                    </p>
+                    </span>
                     :
                     <ul className="font-custom text-custom leading-custom list-disc list-inside mb-4">
                         {children}
